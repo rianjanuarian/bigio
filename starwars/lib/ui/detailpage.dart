@@ -30,32 +30,15 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      // appBar: AppBar(
-      //   centerTitle: true,
-      //   title: Text(nama),
-      // ),
+      appBar: AppBar(
+        title: Text(nama),
+      ),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Positioned(
-              left: mWidth * 0.02,
-              child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.transparent,
-                      shape: const CircleBorder(),
-                      padding: const EdgeInsets.all(5)),
-                  child: const Icon(
-                    Icons.arrow_back_ios,
-                    size: 15,
-                  )),
-            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(

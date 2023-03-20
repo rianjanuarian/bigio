@@ -40,6 +40,7 @@ class FilmsPage extends StatelessWidget {
                     )),
                 Positioned(
                   left: mWidth * 0.02,
+                  top: mHeight * 0.05,
                   child: ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context);
@@ -57,8 +58,8 @@ class FilmsPage extends StatelessWidget {
                     top: mHeight * 0.26,
                     left: mWidth * 0.03,
                     child: Container(
-                      height: mHeight * 0.04,
-                      width: mWidth * 0.2,
+                      height: 25,
+                      width: 100,
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
